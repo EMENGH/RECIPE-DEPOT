@@ -16,6 +16,7 @@ var UserSchema = new Schema({
     user_pass: String,
     created_at: Date,
     updated_at: Date,
+    images: String,
 });
 
 UserSchema.pre('save', function(next) {
@@ -51,7 +52,7 @@ RecipeSchema.pre('save', function(next) {
         this.created_at = now;
     }
     if (!this.images) {
-        this.images = "https://pbs.twimg.com/profile_images/600060188872155136/st4Sp6Aw.jpg"
+        this.images = "http://i.imgur.com/9rguqEo.jpg"
     }
     next();
 });

@@ -3,8 +3,8 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 
-//const UserController = require("./controllers/user");
-//const RecipesController = require("./controllers/recipes");
+const UserController = require("./controllers/user");
+const RecipesController = require("./controllers/recipe");
 const app = express();
 
 mongoose.Promise = global.Promise;
@@ -25,7 +25,7 @@ app.use(bodyParser.json());
 app.use(express.static(__dirname + '/client/build/'));
 
 app.use("/api/user", UserController);
-//app.use("/api/user", UserController);
+app.use("/api/recipe", RecipesController);
 app.get("/", (req, res) => {
   res.json("Hello World");
 });

@@ -23,18 +23,21 @@ class Home extends Component {
   render() {
     return (
       <div>
-        <div>
+        {/* <div>
           <h1>What is your username?</h1>
           <input type="text" name="user" />
           <button>New User</button>
-        </div>
-        {this.state.users.map((user, i) => (
+        </div> */}
+        {/* {this.state.users.map((user, i) => (
           <div key={i}>
             <Link to={`/user/${user._id}`}>
               {user.user}'s User
             </Link>
           </div>
-        ))}
+        ))} */}
+        <h1>WELCOME TO RECIPE DEPOT</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam provident qui veniam, tempora a quas hic cumque eveniet, odit vel ipsa. Iusto qui aperiam repellat in, hic nobis consequuntur obcaecati! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam provident qui veniam, tempora a quas hic cumque eveniet, odit vel ipsa. Iusto qui aperiam repellat in, hic nobis consequuntur obcaecati!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam provident qui veniam, tempora a quas hic cumque eveniet, odit vel ipsa. Iusto qui aperiam repellat in, hic nobis consequuntur obcaecati! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam provident qui veniam, tempora a quas hic cumque eveniet, odit vel ipsa. Iusto qui aperiam repellat in, hic nobis consequuntur obcaecati! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam provident qui veniam, tempora a quas hic cumque eveniet, odit vel ipsa. Iusto qui aperiam repellat in, hic nobis consequuntur obcaecati! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam provident qui veniam, tempora a quas hic cumque eveniet, odit vel ipsa. Iusto qui aperiam repellat in, hic nobis consequuntur obcaecati!</p>
+        <Link to="/selectcuisine">Next</Link>
       </div>
     );
   }

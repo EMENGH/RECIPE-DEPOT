@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Home from "./components/Home";
 import User from "./components/User";
 import AddRecipe from "./components/AddRecipe";
+import CuisineCategories from './components/CuisineCategories';
 
 class App extends Component {
   render() {
@@ -18,8 +19,9 @@ class App extends Component {
           </div>
           <div>
             <Route exact path="/" component={Home} />
-            <Route path="/user/:userId" component={User} />
-            <Route path="/add-recipe" component={AddRecipe} />
+            <Route exact path="/user/:userId" component={User} />
+            <Route exact path="/add-recipe" component={AddRecipe} />
+            <Route exact path="/selectcuisine" component={CuisineCategories} />
           </div>
         </div>
       </Router>
