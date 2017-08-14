@@ -2,26 +2,35 @@ require("dotenv").config();
 const express = require('express');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
-const app = express();
-mongoose.Promise = global.Promise;
-mongoose.connect(process.env.MONGODB_URI); //mongodb://localhost/fullstack-jeopardy
 
+//const UserController = require("./controllers/user");
+//const RecipesController = require("./controllers/recipes");
+const app = express();
+
+mongoose.Promise = global.Promise;
+
+// mongoose connection
+mongoose.connect(process.env.MONGODB_URI); //mongodb://localhost/fullstack-jeopardy
 const connection = mongoose.connection;
+
 connection.on('connected', () => {
   console.log('Mongoose Connected Successfully');    
 }); 
 
-// If the connection throws an error
 connection.on('error', (err) => {  
   console.log('Mongoose default connection error: ' + err);
 }); 
 
 app.use(bodyParser.json());
-app.get('/', (req,res) => {
-  res.send('Hello world!')
-})
+app.use(express.static(__dirname + '/client/build/'));
+
+app.use("/api/user", UserController);
+//app.use("/api/user", UserController);
+app.get("/", (req, res) => {
+  res.json("Hello World");
+});
 
 const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => {
-  console.log("connecting to port 3000" + PORT);
-})
+  console.log("App connecting to port: " + PORT);
+});
