@@ -54,8 +54,8 @@ mary.save(function(err) {
 var generalTsoChicken = new Recipe({
     categoryName: 'chinese',
     title: 'General Tso chicken',
-    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam provident qui veniam, tempora a quas hic cumque eveniet, odit vel ipsa. Iusto qui aperiam repellat in, hic nobis consequuntur obcaecati! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam provident qui veniam, tempora a quas hic cumque eveniet, odit vel ipsa. Iusto qui aperiam repellat in, hic nobis consequuntur obcaecati!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam provident qui veniam, tempora a quas hic cumque eveniet, odit vel ipsa. Iusto qui aperiam repellat in, hic nobis consequuntur obcaecati! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam provident qui veniam, tempora a quas hic cumque eveniet, odit vel ipsa. Iusto qui aperiam repellat in, hic nobis consequuntur obcaecati! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam provident qui veniam, tempora a quas hic cumque eveniet, odit vel ipsa. Iusto qui aperiam repellat in, hic nobis consequuntur obcaecati! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam provident qui veniam, tempora a quas hic cumque eveniet, odit vel ipsa. Iusto qui aperiam repellat in, hic nobis consequuntur obcaecati!",
-    images: 'https://2wzlm92dvpgd3a560m9ue6tx-wpengine.netdna-ssl.com/images/cloudland-canyon-sittons-gulch-trail/1-cloudland-canyon-sittons-gulch-trail.jpg',
+    description: "For the Sauce: Combine soy sauce, wine, vinegar, chicken stock, sugar, sesame seed oil, and cornstarch in a small bowl and stir with a fork until cornstarch is dissolved and no lumps remain. Set aside. Combine oil, garlic, ginger, minced scallions, and red chilies in a large skillet and place over medium heat.",
+    images: ' ',
     reviews: ' ',
     created_at: '03-22-2017',
     updated_at: '04-25-2017'

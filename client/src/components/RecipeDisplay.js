@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
+import RecipeDescription from './RecipeDescription';
 
 class RecipeDisplay extends Component {
     constructor() {
@@ -33,10 +34,17 @@ class RecipeDisplay extends Component {
     
     render(){
         return (
-        <div>
-            
+        <div> 
             {this.state.recipes.map((recipe, index) => {
-                return <button><h1>{recipe.title}</h1></button>;
+                //return <Link to={`/recipe/${recipe.categoryName}/${recipe.title}`}><button><h1>{recipe.title}</h1></button></Link>;
+                //<Link to={`/recipe/italian/description`}>{recipe.title}</Link>
+                //return <Link to={`/recipes/:recipeId`}>{recipe.title}</Link>
+                return  <RecipeDescription
+                        key={index}
+                        id={index} 
+                        recipeInfo={recipe} />
+                                
+                
             })}
         </div>
          ) }

@@ -6,6 +6,7 @@ class Recipe extends Component {
       <div>
         Hello From Recipe
         {this.props.match.params.recipe}
+        
       </div>
     );
   }
