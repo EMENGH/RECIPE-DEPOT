@@ -21,7 +21,7 @@ var UserSchema = new Schema({
 
 UserSchema.pre('save', function(next) {
     if (!this.images) {
-        this.images = "/images/piper.jpg"
+        this.images = "/http://i.imgur.com/evkHuCr.jpg"
     }
 
     now = new Date();
@@ -32,11 +32,10 @@ UserSchema.pre('save', function(next) {
     next();
 });
 
-// adventure schema
+// Recipe schema
 var RecipeSchema = new Schema({
-    categories: String,
+    categoryName: String,
    // subCategories: {type: String, lowercase: true},
-   // location: String,
     title: String,
     description: String,
     images: String,

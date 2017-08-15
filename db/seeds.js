@@ -52,9 +52,7 @@ mary.save(function(err) {
 
 // NEW RECIPES
 var generalTsoChicken = new Recipe({
-    categories: 'Chinese',
-   // subCategories: 'hiking',
-   // location: 'north west GA',
+    categoryName: 'chinese',
     title: 'General Tso chicken',
     description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam provident qui veniam, tempora a quas hic cumque eveniet, odit vel ipsa. Iusto qui aperiam repellat in, hic nobis consequuntur obcaecati! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam provident qui veniam, tempora a quas hic cumque eveniet, odit vel ipsa. Iusto qui aperiam repellat in, hic nobis consequuntur obcaecati!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam provident qui veniam, tempora a quas hic cumque eveniet, odit vel ipsa. Iusto qui aperiam repellat in, hic nobis consequuntur obcaecati! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam provident qui veniam, tempora a quas hic cumque eveniet, odit vel ipsa. Iusto qui aperiam repellat in, hic nobis consequuntur obcaecati! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam provident qui veniam, tempora a quas hic cumque eveniet, odit vel ipsa. Iusto qui aperiam repellat in, hic nobis consequuntur obcaecati! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam provident qui veniam, tempora a quas hic cumque eveniet, odit vel ipsa. Iusto qui aperiam repellat in, hic nobis consequuntur obcaecati!",
     images: 'https://2wzlm92dvpgd3a560m9ue6tx-wpengine.netdna-ssl.com/images/cloudland-canyon-sittons-gulch-trail/1-cloudland-canyon-sittons-gulch-trail.jpg',
@@ -64,9 +62,7 @@ var generalTsoChicken = new Recipe({
 })
 
 var fettuccineAlfredo = new Recipe({
-    categories: 'Italian',
-    //subCategories: 'hiking',
-    //location: 'Tallulah Falls, GA, 30573',
+    categoryName: 'italian',
     title: 'Fettuccine Alfredo',
     description: "Toss hot fettuccine with hot sauce. Garnish, if desired, with fresh ground black pepper and chopped parsley",
     images: ' ',
@@ -76,9 +72,7 @@ var fettuccineAlfredo = new Recipe({
 })
 
 var strawberrySalad = new Recipe({
-    categories: 'Salads',
-    //subCategories: 'hiking',
-    //location: 'north west GA',
+    categoryName: 'salads',
     title: 'Strawberry Salad',
     description: 'In a large bowl toss the spinach with the strawberries and toasted almonds',
     images: ' ',

@@ -9,13 +9,30 @@ router.get("/", (req, res) => {
   });
 });
 
-router.get("/:cuisine", (req, res) => {
-    const cuisine = req.params.cuisine;
 
-    //get all recipes
+router.get("/:recipeCategory", (req, res) => {
+    console.log('hello');
+    // const Category = req.params.recipeCategory;
+    // console.log(Category);
+
+    // //get all recipes
+    // Recipe.find({})
+    //     .then((recipes) => {
+    //         const recipeSelected = recipes.filter((recipe) => {
+    //             console.log('found recipe: ' + recipe.categoryName)
+    //             return recipe.title === cuisine
+            
+
+            
+        // })
+    })
+    
     //filter by cuisine
+ 
     //return filters results
-})
+
+
+
 router.post("/", (req, res) => {
   const newRecipe = new Recipe();
   console.log(req.body);
