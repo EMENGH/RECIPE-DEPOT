@@ -8,6 +8,7 @@ import User from "./components/User";
 import AddRecipe from "./components/AddRecipe";
 import CuisineCategories from './components/CuisineCategories';
 import RecipeDisplay from './components/RecipeDisplay';
+import RecipeDescription from './components/RecipeDescription';
 
 class App extends Component {
   render() {
@@ -24,6 +25,7 @@ class App extends Component {
             <Route exact path="/add-recipe" component={AddRecipe} />
             <Route exact path="/selectcuisine" component={CuisineCategories} />
             <Route exact path="/recipe/:recipeCategory" component={RecipeDisplay} />
+            <Route exact path="/recipe/:recipeDescription" component={RecipeDescription} />
           </div>
         </div>
       </Router>

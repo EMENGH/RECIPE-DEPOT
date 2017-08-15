@@ -71,6 +71,16 @@ var fettuccineAlfredo = new Recipe({
     updated_at: '06-28-2017'
 })
 
+var pastaPrimavera = new Recipe({
+    categoryName: 'italian',
+    title: 'Pasta Primavera',
+    description: "Toss the pasta al-dente with hot sauce. Garnish, if desired, with fresh basil, diced tomatoes, and green peas",
+    images: ' ',
+    reviews: ' ',
+    created_at: '06-25-2017',
+    updated_at: '06-28-2017'
+})
+
 var strawberrySalad = new Recipe({
     categoryName: 'salads',
     title: 'Strawberry Salad',
@@ -90,6 +100,11 @@ generalTsoChicken.save((err) => {
 fettuccineAlfredo.save((err) => {
     if (err) console.log(err);
     console.log("Fettuccine Alfredo recipe has been Saved");
+})
+
+pastaPrimavera.save((err) => {
+    if (err) console.log(err);
+    console.log("Pasta Primavera recipe has been Saved");
 })
 
 strawberrySalad.save((err) => {

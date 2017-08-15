@@ -12,24 +12,23 @@ router.get("/", (req, res) => {
 
 router.get("/:recipeCategory", (req, res) => {
     console.log('hello');
-    // const Category = req.params.recipeCategory;
-    // console.log(Category);
+    const Category = req.params.recipeCategory;
+    console.log(Category);
 
-    // //get all recipes
-    // Recipe.find({})
-    //     .then((recipes) => {
-    //         const recipeSelected = recipes.filter((recipe) => {
-    //             console.log('found recipe: ' + recipe.categoryName)
-    //             return recipe.title === cuisine
-            
-
-            
-        // })
+    //get all recipes
+    Recipe.find()
+        .then((recipes) => {
+            //filter by cuisine
+            const recipeSelected = recipes.filter((recipe) => {
+                console.log('found recipe: ' + recipe.categoryName)
+                return recipe.categoryName === Category  
+            })
+            console.log(recipeSelected);
+            //return filters results
+            res.json(recipeSelected)
     })
-    
-    //filter by cuisine
+})
  
-    //return filters results
 
 
 

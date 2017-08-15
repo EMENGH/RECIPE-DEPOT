@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 
-class RecipeDisplay extends Component {
+class RecipeDescription extends Component {
     constructor() {
         super();
         this.state = {
@@ -16,9 +16,9 @@ class RecipeDisplay extends Component {
     }
 
     componentWillMount(){
-        const recipeCategory = this.props.match.params.recipeCategory;
-        console.log(recipeCategory);
-        axios.get(`/api/recipe/${recipeCategory}`).then((res) => {
+        const recipeDesc = this.props.match.params.recipeDesc;
+        console.log(recipeDesc);
+        axios.get(`/api/recipe/description${recipeDesc}`).then((res) => {
             console.log(res);
             const newState = {...this.state};
             newState.recipes = res.data;
@@ -26,7 +26,7 @@ class RecipeDisplay extends Component {
 
             this.setState(newState);
         }).catch((err) => {
-            console.log("there was an error");
+            console.log("there was a error");
             console.log(err)
         })
     }
@@ -36,10 +36,13 @@ class RecipeDisplay extends Component {
         <div>
             
             {this.state.recipes.map((recipe, index) => {
-                return <button><h1>{recipe.title}</h1></button>;
+                return <h1>{recipe.title}</h1>;
+                return <h1>{recipe.description}</h1>;
+                return <h1>{recipe.images}</h1>;
+                return <h1>{recipe.reviews}</h1>;
             })}
         </div>
          ) }
 }
 
-export default RecipeDisplay;
+export default RecipeDescription;
