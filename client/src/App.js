@@ -68,7 +68,7 @@ const descriptionComponent = () => (
             <Link to="/add-recipe">Add Recipe</Link>
           </div>
           <div>
-            <Route path="/" component={Home} />
+            <Route exact path="/" component={Home} />
             <Route exact path="/user/:userId" component={User} />
             <Route exact path="/add-recipe" component={AddRecipe} />
             <Route exact path="/selectcuisine" component={CuisineCategories} />

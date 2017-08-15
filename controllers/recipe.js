@@ -9,7 +9,6 @@ router.get("/", (req, res) => {
   });
 });
 
-
 router.get("/:recipeCategory", (req, res) => {
     console.log('hello');
     const Category = req.params.recipeCategory;
@@ -29,9 +28,6 @@ router.get("/:recipeCategory", (req, res) => {
     })
 })
  
-
-
-
 router.post("/", (req, res) => {
   const newRecipe = new Recipe();
   console.log(req.body);
