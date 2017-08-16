@@ -22,15 +22,6 @@ class CuisineCategories extends Component {
         
         }
         
-        p{
-            color: white;
-            font-size: 30px;
-            border-radius: 20px;
-            text-decoration: none;
-            background-color: red;
-            opacity: 0.8;
-            padding: 20px 30px;
-        }
         .menuButton {
             color: white;
             font-size: 35px;
@@ -39,9 +30,7 @@ class CuisineCategories extends Component {
             background-color: red;
             opacity: 0.8;
             padding: 15px 55px;
-            margin-right: 30px;
-
-        
+            margin-right: 30px;       
         }
     `
 
