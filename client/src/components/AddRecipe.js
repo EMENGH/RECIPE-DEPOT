@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from "axios";
+import styled, { keyframes } from 'styled-components';
 
 class AddRecipe extends Component {
     constructor() {
@@ -21,18 +22,40 @@ class AddRecipe extends Component {
       };
     
   render() {
+
+    const AddRecipePage = styled.div`
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    color: red;
+    background-image: url("http://i.imgur.com/dfhNBeF.jpg");    
+    background-size: cover;
+
+    h1{
+        color: black;
+        text-align: center;
+        font-size: 30px;       
+    }
+    div {
+        font-size: 40px;
+        color: white;
+    }
+`
     return (
+        <AddRecipePage>
       <div>
-          Hello from Add recipe
+         Add recipe
         <form onSubmit={this._addNewRecipe}>
-          <label htmlFor="recipe">Cuisine Type: </label>
+          <label htmlFor="recipe">Please enter the Cuisine Type: </label>
           <input onChange={this._changeRecipe} type="text" value={this.state.recipe} />
           <br />
-            );
-          })}
+        
           <button>Save Recipe</button>
         </form>
       </div>
+      </AddRecipePage>
     );
   }
 }
