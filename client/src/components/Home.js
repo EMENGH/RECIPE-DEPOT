@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 import styled, { keyframes } from 'styled-components';
@@ -22,14 +21,12 @@ class Home extends Component {
   }
 
   render() {
-
     const HomePage = styled.div`
     display: flex;
     flex-direction: column;
     height: 95vh;
     justify-content: center;
     align-items: center;
-    color: red;
     background-image: url("http://i.imgur.com/Q4fVZvt.jpg");
     background-size: cover;
 
@@ -39,7 +36,6 @@ class Home extends Component {
         font-size: 70px;
     
     }
-    
     p{
         color: white;
         font-size: 30px;
@@ -49,8 +45,6 @@ class Home extends Component {
         opacity: 0.8;
         padding: 20px 30px;
     }
-
-
     a{
         color: white;
         font-size: 35px;
