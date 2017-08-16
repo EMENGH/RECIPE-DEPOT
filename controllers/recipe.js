@@ -17,17 +17,17 @@ router.get("/:recipeCategory", (req, res) => {
     //get all recipes
     Recipe.find()
         .then((recipes) => {
-            //filter by cuisine
+            //filter by cuisine type
             const recipeSelected = recipes.filter((recipe) => {
                 console.log('found recipe: ' + recipe.categoryName)
                 return recipe.categoryName === Category  
             })
             console.log(recipeSelected);
-            //return filters results
+            //return filtered results by cuisine type (ex: all italian recipes)
             res.json(recipeSelected)
     })
 })
- 
+
 router.post("/", (req, res) => {
   const newRecipe = new Recipe();
   console.log(req.body);
