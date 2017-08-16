@@ -48,10 +48,9 @@ class RecipeDisplay extends Component {
         h1{
             color: black;
             text-align: center;
-            font-size: 30px;       
+            font-size: 25px;       
         }
     `
-
         return (
             <RecipePage>
         <div> 
@@ -62,9 +61,7 @@ class RecipeDisplay extends Component {
                 return  <RecipeDescription
                         key={index}
                         id={index} 
-                        recipeInfo={recipe} />
-                                
-                
+                        recipeInfo={recipe} />               
             })}
         </div>
         </RecipePage>
