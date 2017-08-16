@@ -30,7 +30,7 @@ class DeleteRecipe extends Component {
     justify-content: center;
     align-items: center;
     color: red;
-    background-image: url("http://i.imgur.com/dfhNBeF.jpg");    
+    background-image: url("http://i.imgur.com/yDD0LCR.jpg");    
     background-size: cover;
 
     div {
