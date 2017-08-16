@@ -33,11 +33,6 @@ class AddRecipe extends Component {
     background-image: url("http://i.imgur.com/dfhNBeF.jpg");    
     background-size: cover;
 
-    h1{
-        color: black;
-        text-align: center;
-        font-size: 30px;       
-    }
     div {
         font-size: 40px;
         color: white;
