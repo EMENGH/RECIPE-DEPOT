@@ -1,29 +1,43 @@
-# RECIPE-DEPOT
 
-TRELLO: link to page: https://trello.com/b/MdTm1vuj/wdi-project-3
 
-GITHUB: link to page: https://github.com/ejjonzey/wdi-adventure-app
+1. APP NAME: 
 
-WIREFRAME: http://imgur.com/a/0ROoC
+   RECIPE-DEPOT
 
-PORTFOLIO: a link in your portfolio site of each team member (in progress).
 
-HEROKU LINK: https://sleepy-atoll-23923.herokuapp.com/
 
-DESCRIPTION:
+2. LINKS:
 
-this application was built to help Users looking for adventures in the city of your selections but initially will be limited to the city of Atlanta area. The app allows you to discover, review, and or reject adventures entered by Users. It will also allow you to view adventures which are randomly selected by this application.
+   TRELLO: link to page: https://trello.com/b/MdTm1vuj/wdi-project-3
 
-Users can initially select from a group of categories (Outdoor, Dinning, Indoor). Then, depending of the category selected, choose from a group of subcategories like: hiking, parks, etc. the application will return a randomly chosen adventure based on the User's initial selection. Users are then presented with information about the adventure and with the option to approve or reject the adventure based on the User's experience. Also, a comment can be added to the adventure.
+   GITHUB: link to page: https://github.com/EMENGH/RECIPE-DEPOT
 
-the plan for version v2.0 is to include part or all of the following features:
+   WIREFRAME: http://i.imgur.com/B2WdGJs.jpg
 
-Functionality to select other locations (cities).
-Login information to keep track of Users
-Additional functionality to add tips to each adventure
-Adding more categories
-Location customizer: using a map to select cities or regions.
-Ability to display the percentage of acceptance for that adventure based on the number of likes or dislikes from previous Users input.
-List of technologies used in this app:
+   PORTFOLIO: a link in your portfolio site of each team member (in progress).
 
-javascript HTML CSS Jquery Mongo Express Node Heroku
+   HEROKU LINK: 
+
+
+
+
+3. DESCRIPTION:
+
+   The main purpose of this application is to offer a channel to explore, discover, and contribute to create a great collection of recipes. This repository is organized by cuisine types like chinese, italian, etc, to facilitate finding a particular recipe. It also offers the possibility to look at recipe reviews or add reviews to a specific recipe. This may give you a handy tool to choose from popular concoctions and perhaps it may encourage you to try some of these popular dishes.
+
+   When users enter the application and click on begin on the home page, they will be in a new window containing (initially) three cuisine types to choose from. if for example they choose italian, they will be presented with a list of italian recipes with a brief description of each one of them. Users should be able to click on the name of a specific recipe to get a full description of the recipe. if on the other hand they decide to add a recipe, they can click on the link on the upper left side of the recipe page which will direct them to a page to enter all the information for the new recipe.
+
+
+4. NEXT VERSION FEATURES:
+
+   the plan for version v2.0 is to include part or all of the following features:
+
+   - Functionality to update and delete recipes entered by the same user.
+   - Login information to keep track of Users
+   - Additional cuisine types
+
+
+
+5. List of technologies used in this app:
+
+   javascript HTML CSS Mongo Express Node React Heroku
