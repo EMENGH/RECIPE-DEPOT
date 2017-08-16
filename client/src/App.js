@@ -33,6 +33,7 @@ const descriptionComponent = () => (
           <div>
             <Link to="/">Home</Link>
             <Link to="/add-recipe">Add Recipe</Link>
+            <Link to="/delete-recipe">Delete Recipe</Link>            
           </div>
           <div>
             <Route exact path="/" component={Home} />
