@@ -8,6 +8,7 @@ import AddRecipe from "./components/AddRecipe";
 import CuisineCategories from './components/CuisineCategories';
 import RecipeDisplay from './components/RecipeDisplay';
 import RecipeDescription from './components/RecipeDescription';
+import DeleteRecipe from "./components/DeleteRecipe";
 
 const FirstPage = () => (
   <div>
@@ -40,10 +41,11 @@ const descriptionComponent = () => (
             <Route exact path="/selectcuisine" component={CuisineCategories} />
             <Route exact path="/recipe/:recipeCategory" component={RecipeDisplay} />
             <Route exact path="/recipe/:cuisine/:recipetitle" render={descriptionComponent} />
+            <Route exact path="/delete-recipe" component={DeleteRecipe} />
           </div>
         </div>
       </Router>
-    );
+    );  
   }
 }
 
