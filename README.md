@@ -1,6 +1,6 @@
 
 
-1. APP NAME: 
+1. APP NAME:
 
    RECIPE-DEPOT
 

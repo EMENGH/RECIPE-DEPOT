@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-//import logo from './logo.svg';
-//import './App.css';
 import axios from 'axios';
 
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
@@ -20,38 +18,6 @@ const FirstPage = () => (
 )
 
 class App extends Component {
-
-  // move the state from Recipe Display up here so you can pass it to any component 
-
-//   constructor() {
-//     super();
-//     this.state = {
-//         recipes: [],
-//         id: '',
-//         title: '',
-//         description: '',
-//         images: '',
-//         reviews: ''
-//     }
-//   } 
-
-//   componentWillMount(){
-//     const recipeCategory = this.props.match.params.recipeCategory;
-//     console.log(recipeCategory);
-//     axios.get(`/api/recipe/${recipeCategory}`).then((res) => {
-//         console.log(res);
-//         const newState = {...this.state};
-//         newState.recipes = res.data;
-//         console.log(newState);
-
-//         this.setState(newState);
-//     }).catch((err) => {
-//         console.log("there was an error");
-//         console.log(err)
-//     })
-// }
-
-
 
   render() {
 
