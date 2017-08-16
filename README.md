@@ -16,7 +16,7 @@
 
    PORTFOLIO: a link in your portfolio site of each team member (in progress).
 
-   HEROKU LINK: 
+   HEROKU LINK: https://recipes-depot.herokuapp.com/
 
 
 
