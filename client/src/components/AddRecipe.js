@@ -30,7 +30,7 @@ class AddRecipe extends Component {
     justify-content: center;
     align-items: center;
     color: red;
-    background-image: url("http://i.imgur.com/dfhNBeF.jpg");    
+    background-image: url("http://i.imgur.com/OVZVkEd.jpg");    
     background-size: cover;
 
     div {
